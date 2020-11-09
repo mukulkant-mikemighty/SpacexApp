@@ -1,1 +1,289 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+.myhtml{
+    background-color: rgb(198, 199, 194);
+    widows: 2;
+}
+
+
+
+.body1 {
+    
+    display: inline-flex;
+    offset-inline-start: 0%;
+    /* width:100%; */
+    /* max-width: 100%; */
+    flex-wrap: wrap;
+    
+}
+.body1.maincol{
+    vertical-align: top;
+}
+
+.body1.row:enabled::after{
+      /* Clear floats after the columns */
+      /* width:100%; */
+      /* max-width: 75%; */
+      align-self: right;
+       /* margin-top: 140px; */
+       align-content: justify;
+        content: "";
+        display: inline-flex;
+        flex-basis: content;
+        flex-wrap: wrap;
+        /* margin-bottom: 140px; */
+      
+}        
+.body1.column:enabled{
+
+    display: inline-flex;
+    /* max-width: 100%; */
+    
+    flex-basis: content;
+    flex-wrap: wrap;
+    flex: 33.33%;
+    max-width: 33.33%;
+    
+}
+
+.body1.row.column.card{
+    /* width: fit-content; */
+    /* width:max-content; */
+    align-content: center;
+    font-size: medium;
+    background-color:rgb(120, 122, 112);
+    padding: 0.1%;
+    margin: 1%;
+    text-align: left;
+    box-sizing: content-box;
+    /* border-block-color: black; */
+    /* border: 10px solid black; */
+    widows: 6;
+    cursor: pointer;
+    
+}  
+
+.body1.row.column1.card{
+    /* width: fit-content; */
+    /* width: max-content; */
+    align-content: center;
+    font-size: medium;
+    background-color:rgb(120, 122, 112);
+    padding: 0.1%;
+    margin: 1%;
+    text-align: left;
+    box-sizing: content-box;
+    /* border-block-color: black; */
+    /* border: 10px solid black; */
+    widows: 6;
+    cursor: pointer;
+    
+} 
+.body1.row.column2.card{
+    /* width: fit-content; */
+    /* width:fit-content; */
+    align-content: center;
+    font-size: medium;
+    background-color:rgb(120, 122, 112);
+    padding: 0.1%;
+    margin: 1%;
+    text-align: left;
+    box-sizing: content-box;
+    /* border-block-color: black; */
+    /* border: 10px solid black; */
+    widows: 6;
+    cursor: pointer;
+    
+}      
+
+.body1.filters1{
+    /* display: flex; */
+    display:block;
+    block-size: 25%;
+    /* scroll-behavior: smooth; */
+    /* width: 25%;  */
+    /* offset-inline-start: 0%; */
+    /* position:relative; */
+    /* vertical-align: top; */
+    align-content: center;
+    font-size: medium;
+    background-color: rgb(120, 122, 112);
+    padding: 0.1%;
+    margin: 0.01%;
+    /* margin-bottom: 1%; */
+    /* text-align: start; */
+    /* flex-wrap: wrap; */
+    box-sizing: inherit;
+    /* border-block-color: black; */
+     
+    /* border: 5px solid black; */
+    scroll-margin-top:0%;
+}
+
+.body1.filters1.filter1{
+    display: inline-block;
+    margin:0.01%;
+}
+.body1.filters1.head{
+    font-size: xx-large;
+    border: none;
+}
+.body1.filters1.launchYear{
+    border:none;
+}
+    
+.body1.filters1.filter1.buttons{
+    position: relative top;
+    align-content: center;
+    /* max-block-size: 10cm; */
+
+    border: none;
+  color: white;
+  /* padding: 15px 32px; */
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: inherit;
+  /* font-size: 16px; */
+  margin: 2% 1%;
+  vertical-align: top;
+  /* cursor: pointer; */
+  
+/*   
+    font-size:medium;
+  
+  background-color: rgb(252, 226, 180);
+  display: block;
+
+  padding: none;
+
+  text-decoration: none;
+  
+ */
+  /* widows: 6; */
+}
+
+.body1.filters1.filter1.buttons.button1{
+    cursor: pointer;
+    align-content: center;
+  widows: none;
+  flex-wrap: wrap;
+  /* block-size: 50%;   */
+  text-align: center;
+  margin:2% 1%;  
+  font-size: medium;
+  background-color: #8bbb6f;
+  padding: 1% ;
+  
+  color: black;
+  border: none;
+   
+  vertical-align: top; 
+}
+
+.body1.filters1.filter1.buttons.button2{
+    cursor: pointer;
+    align-content: center;
+    widows:none;
+    flex-wrap: wrap;
+    /* block-size: 100%;   */
+    text-align: center;
+    margin:2% 1%;  
+    font-size:medium;
+    background-color: #8bbb6f;
+    padding: 1% ;
+    
+    color: black;
+    border: none;
+    /* cursor: pointer;  */
+    vertical-align: top; 
+  }        
+ .body1.filters1.filter2{
+     display: inline-block;
+     widows: 0;
+     margin: 0.01%;
+     margin-bottom: 5%;
+     /* border: none; */
+ }    
+  
+.body1.filters1.filter2.launchSuccess{
+    align-content: center;
+    font-size: medium;
+    border:none;
+    /* fill: #4CAF50; */
+}
+.body1.filters1.filter2.buttons2{
+    /* display: inline-block; */
+    /* block-size: 50%; */
+    /* inline-size: 100%; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 10%; */
+    /* max-block-size: initial;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    block-size: inherit; */
+    border:none;
+    widows: 0;
+}
+
+
+.body1.filters1.filter2.true{
+    /* display: flex; */
+    font-size: medium;
+    border:none;
+    flex-wrap: wrap;
+  /* block-size: 50%;   */
+  text-align: center;
+  margin: 1%;  
+  align-self: center;
+    align-items: center;
+    align-content: center;
+ object-position: 0%;
+  background-color: #8bbb6f;
+  padding: 5% ;
+  /* fill: #4CAF50; */
+  /* column-fill: auto; */
+  /* fill-opacity: 100%; */
+  /* fill-rule: nonzero; */
+  color: black;
+  
+  cursor: pointer; 
+  align-self: left;
+  align-content: flex-start;
+
+}
+.body1.filters1.filter2.false{
+    /* display: flex; */
+    font-size: medium;
+    border:none;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    object-position: 50%;
+    flex-wrap: wrap;
+  /* block-size: 50%;   */
+  text-align: center;
+  margin: 1%;  
+  
+  background-color: #8bbb6f;
+  padding: 5%;
+  /* fill: #4CAF50; */
+  /* fill-opacity: 100%; */
+  /* column-fill: auto; */
+  /* fill-rule: nonzero; */
+  color: black;
+  
+  cursor: pointer; 
+  vertical-align: top;
+}
+
+
+.footer1{
+    position: absolute bottom;
+    vertical-align: bottom;
+}
