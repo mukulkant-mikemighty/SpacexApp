@@ -1,0 +1,393 @@
+<div class="body1">
+    <table><td><div class="body1 maincol"><tr><td style="width: 15%;padding-top: 1%;">
+    <div *ngIf="this.desktop || this.tablet" class="body1 filters1">
+        <h2><b><div  class="body1 filters1 head">Filters:</div></b></h2>
+        <div class="body1 filters1 filter1" style="width: 100%;">
+            <h3><b><div class="" style="text-align: center;">Launch Year:</div></b></h3>
+            <!-- <table>
+                <tr>
+                    <td>
+            <div *ngFor="let iterObj1 of this.year_list1" class="body1 filters1 filter1 buttons" >
+                <td>
+                <button type="button"  (click)="this.spacex.hit(filter=iterObj1.launch_year)" value="iterObj1.launch_year" class="body1 filters1 filter1 buttons button1" >{{iterObj1}} </button>
+                </td>
+            </div>    
+                    </td>
+                    <td>
+            <div *ngFor="let iterObj2 of this.year_list2" class="body1 filters1 filter1 buttons" >
+                <td>
+                <button type="button" (click)="this.spacex.hit(filter=iterObj2.launch_year)" value="iterObj2.launch_year" class="body1 filters1 filter1 buttons button2" >{{iterObj2}} </button>
+                </td>
+            </div>
+                    </td>
+                </tr>   
+            </table> -->
+           
+            <div class="container" style="display: flex; justify-content: center; text-align: center; width: 100%;">
+                <div class="yearList1" style="margin:10%;">
+                    <div *ngFor="let iterObj1 of this.year_list1" style="margin:10%;">
+                        <button type="button"  (click)="this.launch_year_filter(iterObj1)" 
+                        value="iterObj1.launch_year" style="background-color: #8bbb6f; border: none; border-radius: 10%; padding: 25%;cursor: pointer;" >{{iterObj1}} </button>
+                    </div>
+                </div>
+                <div class="yearList2" style="margin:10%;">
+                    <div *ngFor="let iterObj1 of this.year_list2" style="margin:10%;">
+                        <button type="button"  (click)="this.launch_year_filter(iterObj1)" 
+                        value="iterObj1.launch_year" style="background-color: #8bbb6f; border: none; border-radius: 10%; padding: 25%;cursor: pointer;" >{{iterObj1}} </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div>
+            <span *ngFor="let iterObj1 of this.year_list" class="body1 filters1 filter1 buttons" >
+                <button type="button"  (click)="this.spacex.hit(filter=iterObj1.launch_year)" value="iterObj1.launch_year" class="body1 filters1 filter1 buttons button1" >{{iterObj1}} </button>
+            </span>    
+           </div> -->
+            
+            <!-- <div *ngFor="let iterObj2 of this.year_list2" class="body1 filters1 filter1 buttons" >
+                <button type="button" (click)="this.spacex.hit(filter=iterObj2.launch_year)" value="iterObj2.launch_year" class="body1 filters1 filter1 buttons button2" >{{iterObj2}} </button>
+            </div> -->
+            </div>
+            <div class="body1 filters1 filter2" style="width: 100%;">
+                <div class="" style="text-align: center;"><h3><b>Successful Launch:</b></h3></div>
+                <div class="body1 filters1 filter2 buttons2">
+                    <button type="button" (click)="this.launch(true)" value="true" class="body1 filters1 filter2 true">True</button>
+                    <button type="button" (click)="this.launch(false)" value="false" class="body1 filters1 filter2 false">False</button>
+                    <!-- <table><tr><td>
+                    <div><button type="button" (click)="this.spacex.hit(launch=true)" value="true" class="body1 filters1 filter2 true">True</button> </div>
+                    </td><td>
+                    <div><button type="button" (click)="this.spacex.hit(launch=false)" value="false" class="body1 filters1 filter2 false">False</button> </div>
+                    </td>
+                    </tr>
+                    </table> -->
+                </div>
+            </div>
+            <div class="body1 filters1 filter2" style="width: 100%;">
+                <div class="" style="text-align: center;"><h3><b>Successful Landing:</b></h3></div>
+                        <div class="body1 filters1 filter2 buttons2">
+                            <button type="button" (click)="this.land_success('y')" value="true" class="body1 filters1 filter2 true">True</button>
+                            <button type="button" (click)="this.land_success('n')" value="false" class="body1 filters1 filter2 false">False</button>
+                        </div>
+            </div>
+        </div>
+        
+    </td>
+    <td>
+<div *ngIf="this.desktop || this.mobile" class="body1">
+    
+        <div class="body1 row">
+            <div class="body1 row column">
+                <div *ngIf="this.mobile" class="body1 mobile filters1">
+                    <h2><b><div  class="body1 mobile filters1 head">Filters:</div></b></h2>
+                    <div class="body1 mobile filters1 filter1" style="width: 100%;">
+                        <h3><b><div class="" style="text-align: center;">Launch Year:</div></b></h3>
+                        <div class="container" style="display: flex; justify-content: center; text-align: center; width: 100%;">
+                            <div class="yearList1" style="margin:10%;">
+                                <div *ngFor="let iterObj1 of this.year_list1" style="margin:10%;">
+                                    <button type="button"  (click)="this.launch_year_filter(iterObj1)" 
+                                    value="iterObj1.launch_year" style="background-color: #8bbb6f; border: none; border-radius: 10%; padding: 25%;cursor: pointer;" >{{iterObj1}} </button>
+                                </div>
+                            </div>
+                            <div class="yearList2" style="margin:10%;">
+                                <div *ngFor="let iterObj1 of this.year_list2" style="margin:10%;">
+                                    <button type="button"  (click)="this.launch_year_filter(iterObj1)" 
+                                    value="iterObj1.launch_year" style="background-color: #8bbb6f; border: none; border-radius: 10%; padding: 25%;cursor: pointer;" >{{iterObj1}} </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body1 filters1 filter2" style="width: 100%;">
+                        <div class="" style="text-align: center;"><h3><b>Successful Launch:</b></h3></div>
+                        <div class="body1 filters1 filter2 buttons2">
+                            <button type="button" (click)="this.launch(true)" value="true" class="body1 filters1 filter2 true">True</button>
+                            <button type="button" (click)="this.launch(false)" value="false" class="body1 filters1 filter2 false">False</button>
+                        </div>
+                    </div>
+                    <div class="body1 filters1 filter2" style="width: 100%;">
+                        <div class="" style="text-align: center;"><h3><b>Successful Landing:</b></h3></div>
+                        <div class="body1 filters1 filter2 buttons2">
+                            <button type="button" (click)="this.land_success('y')"  value="y" class="body1 filters1 filter2 true">True</button>
+                            <button type="button" (click)="this.land_success('n')" value="n" class="body1 filters1 filter2 false">False</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div *ngIf="this.desktop">
+                <span *ngFor="let itemObj of coll1"   class="body1 row column card" >
+                 
+                        
+                    
+                                        
+                    <figure >
+                        <img src={{itemObj.links.mission_patch_small}}/>
+                        
+                        <figcaption >
+                         <div *ngIf="itemObj.mission_name.length <9">   
+                        <h3><b>{{itemObj.mission_name}}: #{{itemObj.flight_number}}</b></h3>
+                        </div>
+                        <div *ngIf="itemObj.mission_name.length >=9">   
+                            <h3><b>{{itemObj.mission_name}}:</b> </h3>
+                                    <h3><b>#{{itemObj.flight_number}}</b></h3>
+                        </div>   
+                        
+                        <div>
+                        <b>Mission Id:</b>{{itemObj.mission_Id}}
+                        </div>
+                        <div>
+                        <b>Launch Year:</b>{{itemObj.launch_year}}
+                        </div>
+                        <div>
+                        <b>Launch Successful:</b>{{itemObj.launch_success}}
+                        </div>
+                        <div>
+                        <b>Landing Successful:</b>{{itemObj.land_success}}
+                        </div>
+                        </figcaption>
+                        </figure>
+    
+                    
+                    
+                
+                </span>
+            </div>
+        
+        
+            <div class="column card">
+                <span *ngFor="let itemObj of coll2" class="card" > 
+                 
+                        
+                    
+                    
+                    <figure >
+                        <img src={{itemObj.links.mission_patch_small}}/>
+                        
+                        <figcaption >
+                            <div *ngIf="itemObj.mission_name.length <9">   
+                                <h3><b>{{itemObj.mission_name}}: #{{itemObj.flight_number}}</b></h3>
+                                </div>
+                            <div *ngIf="itemObj.mission_name.length >=9">   
+                                <h3><b>{{itemObj.mission_name}}:</b> </h3>
+                                    <h3><b>#{{itemObj.flight_number}}</b></h3>
+                            </div> 
+                           
+                        
+                        <div>
+                        <b>Mission Id:</b>{{itemObj.mission_Id}}
+                        </div>
+                        <div>
+                        <b>Launch Year:</b>{{itemObj.launch_year}}
+                        </div>
+                        <div>
+                        <b>Launch Successful:</b>{{itemObj.launch_success}}
+                        </div>
+                        <div>
+                        <b>Landing Successful:</b>{{itemObj.land_success}}
+                        </div>
+                        </figcaption>
+                        </figure>
+    
+    
+                    
+                    
+                    
+                </span>
+        
+        </div>
+        
+
+        
+                        <div   class="column card">
+                        <span *ngFor="let itemObj of coll3" class="card" > 
+                  
+                       
+                
+                    
+                
+                        <figure >
+                        <img src={{itemObj.links.mission_patch_small}}/>
+                    
+                        <figcaption >
+                        <div *ngIf="itemObj.mission_name.length <9">   
+                            <h3><b>{{itemObj.mission_name}}: #{{itemObj.flight_number}}</b></h3>
+                            </div>
+                            <div *ngIf="itemObj.mission_name.length >=9">   
+                                <h3><b>{{itemObj.mission_name}}:</b> </h3>
+                                    <h3><b>#{{itemObj.flight_number}}</b></h3>
+                            </div> 
+                       
+                    
+                    <div>
+                    <b>Mission Id:</b>{{itemObj.mission_Id}}
+                    </div>
+                    <div>
+                    <b>Launch Year:</b>{{itemObj.launch_year}}
+                    </div>
+                    <div>
+                    <b>Launch Successful:</b>{{itemObj.launch_success}}
+                    </div>
+                    <div>
+                    <b>Landing Successful:</b>{{itemObj.land_success}}
+                    </div>
+                    </figcaption>
+                    </figure>
+
+                
+                    
+                        </span>  
+                </div>
+            </div>
+        </div>
+    
+    
+       
+</div>
+
+
+<div *ngIf="this.tablet" class="body1">
+    <table>
+        <div class="body1 row">
+            <div class="body1 row column2">
+                <span *ngFor="let itemObj of coll1"   class="body1 row column2 card" >
+                 
+                        
+                    
+                                        
+                    <figure >
+                        <img src={{itemObj.links.mission_patch_small}}/>
+                        
+                        <figcaption >
+                            <div *ngIf="itemObj.mission_name.length <9">   
+                                <h3><b>{{itemObj.mission_name}}: #{{itemObj.flight_number}}</b></h3>
+                                </div>
+                                <div *ngIf="itemObj.mission_name.length >=9">   
+                                    <h3><b>{{itemObj.mission_name}}:</b> </h3>
+                                    <h3><b>#{{itemObj.flight_number}}</b></h3>
+                                </div> 
+                           
+                        
+                        <div>
+                        <b>Mission Id:</b>{{itemObj.mission_Id}}
+                        </div>
+                        <div>
+                        <b>Launch Year:</b>{{itemObj.launch_year}}
+                        </div>
+                        <div>
+                        <b>Launch Successful:</b>{{itemObj.launch_success}}
+                        </div>
+                        <div>
+                        <b>Landing Successful:</b>{{itemObj.land_success}}
+                        </div>
+                        </figcaption>
+                        </figure>
+    
+                    
+                    
+                
+                </span>
+            </div>
+        
+        
+            <div class="column2 card">
+                <span *ngFor="let itemObj of coll2" class="card" > 
+                 
+                        
+                    
+                    
+                    <figure >
+                        <img src={{itemObj.links.mission_patch_small}}/>
+                        
+                        <figcaption >
+                            <div *ngIf="itemObj.mission_name.length <9">   
+                                <h3><b>{{itemObj.mission_name}}: #{{itemObj.flight_number}}</b></h3>
+                                </div>
+                                <div *ngIf="itemObj.mission_name.length >=9">   
+                                    <h3><b>{{itemObj.mission_name}}:</b> </h3>
+                                    <h3><b>#{{itemObj.flight_number}}</b></h3>
+                                </div> 
+                           
+                        
+                        <div>
+                        <b>Mission Id:</b>{{itemObj.mission_Id}}
+                        </div>
+                        <div>
+                        <b>Launch Year:</b>{{itemObj.launch_year}}
+                        </div>
+                        <div>
+                        <b>Launch Successful:</b>{{itemObj.launch_success}}
+                        </div>
+                        <div>
+                        <b>Landing Successful:</b>{{itemObj.land_success}}
+                        </div>
+                        </figcaption>
+                        </figure>
+    
+    
+                    
+                    
+                    
+                </span>
+        
+        </div>
+        
+
+        
+        
+        </div>
+    </table>
+    
+        <div *ngIf="this.mobile" class="body1">
+            
+                <div class="body1 row">
+                    <div class="body1 row column1">
+                        <span *ngFor="let itemObj of coll1"   class="body1 row column1 card" >
+                         
+                                
+                            
+                                                
+                            <figure >
+                                <img src={{itemObj.links.mission_patch_small}}/>
+                                
+                                <figcaption >
+                                    <div *ngIf="itemObj.mission_name.length <9">   
+                                        <h3><b>{{itemObj.mission_name}}: #{{itemObj.flight_number}}</b></h3>
+                                        </div>
+                                        <div *ngIf="itemObj.mission_name.length >=9">   
+                                            <h3><b>{{itemObj.mission_name}}:</b> </h3>
+                                            <h3><b>#{{itemObj.flight_number}}</b></h3>
+                                        </div> 
+                                   
+                                
+                                <div>
+                                <b>Mission Id:</b>{{itemObj.mission_Id}}
+                                </div>
+                                <div>
+                                <b>Launch Year:</b>{{itemObj.launch_year}}
+                                </div>
+                                <div>
+                                <b>Launch Successful:</b>{{itemObj.launch_success}}
+                                </div>
+                                <div>
+                                <b>Landing Successful:</b>{{itemObj.land_success}}
+                                </div>
+                                </figcaption>
+                                </figure>
+            
+                            
+                            
+                        
+                        </span>
+                    </div>
+                </div>
+            
+        </div>
+       
+</div>
+</td>
+</tr>
+</div>
+</td>
+</table>
+</div>
+
