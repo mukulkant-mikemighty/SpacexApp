@@ -6,3 +6,4 @@ app.get('/*', function(req, res) {
   res.sendFile('index.html', {root: 'dist/SpaceX/'});
 });
 app.listen(process.env.PORT || 8080);
+console.log('Server running on : ' + (process.env.PORT || 8080));
