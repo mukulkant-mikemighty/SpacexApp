@@ -1,0 +1,33 @@
+<div class="side-bar-container">
+    <div class="side-bar">
+    <div class="heading">Filters:</div>
+    <div class="heading-container">
+      <span class="sub-heading">Launch Year</span>
+      <div class="year-list">
+          <span class="year-wrapper">
+            <span (click)="this.body.launch_year_filter(iterObj1)" [ngClass]="{'year-left': i % 2 == 0 , 'year-right': i % 2 !== 0 }" *ngFor="let iterObj1 of this.body.year_list; let i = index">
+              <span [ngClass]="{'active': iterObj1 === this.body.filter1}"> {{ iterObj1 }} </span></span>
+          </span>
+      </div>
+    </div>
+  
+    <div class="heading-container">
+      <span class="sub-heading">Successful Launch</span>
+      <span class="launch-wrapper">
+        <span class="launch-left" (click)="this.body.launch(true)">
+          <span [ngClass]="{'active': this.body.launch1 == true }">True</span></span>
+        <span class="launch-right" (click)="this.body.launch(false)">
+          <span [ngClass]="{'active': this.body.launch1 == false }">False</span></span>
+      </span>
+    </div>
+    <div class="heading-container">
+      <span class="sub-heading">Successful Landing</span>
+      <span class="landing-wrapper">
+        <span class="landing-left" (click)="this.body.land_success('y')" >
+          <span [ngClass]="{'active': this.body.land_success1 == 'y' }">True</span></span>
+        <span class="landing-right" (click)="this.body.land_success('n')">
+          <span [ngClass]="{'active': this.body.land_success1 == 'n' }">False</span></span>
+      </span>
+    </div>
+    </div>
+  </div>

@@ -61,6 +61,10 @@ export class BodyComponent implements OnInit {
   launch1:boolean;
   land_success1:string;
   
+  collA:any;
+  collB: any;
+
+
   constructor(
     public spacex: LinkService,
     // public body2: Body2Component,
@@ -119,10 +123,15 @@ export class BodyComponent implements OnInit {
   }
 launch(launch:boolean){
   if(launch==true){
-    this.launch1=true;
+    if(this.launch1==true){this.launch1=undefined}
+    else{
+      this.launch1=true;
+    }
+    
   }
   else if(launch==false){
-    this.launch1=false;
+    if(this.launch1==false){this.launch1=undefined }
+    else{this.launch1=false;}
   }
   else{
     this.launch1=undefined;
@@ -130,15 +139,22 @@ launch(launch:boolean){
   this.uriHit();
 }
 launch_year_filter(filter:number){
-this.filter1=filter;
-this.uriHit();
+  if(this.filter1!=filter){
+    this.filter1=filter;
+  }
+  else{
+    this.filter1=undefined;
+  }
+  this.uriHit();
 }
 land_success(land_success:string){
   if(land_success=='y'||land_success=='Y'){
-    this.land_success1='y';
+    if(this.land_success1=='y'){this.land_success1=undefined}
+    else{this.land_success1='y';}
   }
   else if(land_success=='n'||land_success=='N'){
-    this.land_success1='n';
+    if(this.land_success1=='n'){this.land_success1=undefined}
+    else{this.land_success1='n';}
   }
   else{
     this.land_success1=undefined;
@@ -214,7 +230,8 @@ display(page){
     this.coll2=this.page.slice(this.list.length/3,2*this.list.length/3);
     this.coll3=this.page.slice(2*this.list.length/3,);
     
-    
+    this.collA=this.page.slice(0,this.list.length/2);
+    this.collB=this.page.slice(this.list.length/2,);
 
   }
   

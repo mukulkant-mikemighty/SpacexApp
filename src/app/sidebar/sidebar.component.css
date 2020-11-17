@@ -1,0 +1,170 @@
+.side-bar-container .side-bar {
+	 background-color: white;
+	 margin: 5px;
+	 padding: 5px;
+}
+ @media screen and (max-width: 47.938em) {
+	 .side-bar-container .side-bar {
+		 max-width: 250px;
+		 margin: auto;
+		 padding: 5px;
+	}
+}
+ .side-bar-container .side-bar .heading {
+	 font-weight: bold;
+	 font-size: 22px;
+	 text-align: left;
+	 margin-left: 10px;
+}
+ .side-bar-container .side-bar .heading-container {
+	 text-align: center;
+	 padding: 3px 0;
+}
+ .side-bar-container .side-bar .heading-container .sub-heading {
+	 font-weight: 600;
+	 font-size: 12px;
+	 padding: 0 10px;
+	 border-bottom: 1px solid black;
+}
+ .side-bar-container .side-bar .heading-container .year-list {
+	 display: flex;
+	 flex-direction: column;
+	 text-align: center;
+	 margin-top: 5px;
+}
+ .side-bar-container .side-bar .heading-container .year-list .year-wrapper {
+	 display: flex;
+	 flex-direction: row;
+	 flex-wrap: wrap;
+	 margin-top: 5px;
+	 padding: 0 10px;
+}
+ .side-bar-container .side-bar .heading-container .year-list .year-wrapper .year-left {
+	 padding: 5px 0;
+	 width: 50%;
+}
+ .side-bar-container .side-bar .heading-container .year-list .year-wrapper .year-left span {
+	 background-color: lightgreen;
+	 padding: 5px;
+	 border-radius: 2px;
+}
+ .side-bar-container .side-bar .heading-container .year-list .year-wrapper .year-left span:hover {
+	 cursor: pointer;
+	 background-color: #90ed04;
+}
+ .side-bar-container .side-bar .heading-container .year-list .year-wrapper .year-left .active {
+	 background-color: darkgreen;
+}
+ .side-bar-container .side-bar .heading-container .year-list .year-wrapper .year-left .active:hover {
+	 background-color: darkgreen;
+}
+ .side-bar-container .side-bar .heading-container .year-list .year-wrapper .year-right {
+	 padding: 5px 0;
+	 width: 50%;
+}
+ .side-bar-container .side-bar .heading-container .year-list .year-wrapper .year-right span {
+	 background-color: lightgreen;
+	 padding: 5px;
+	 border-radius: 2px;
+}
+ .side-bar-container .side-bar .heading-container .year-list .year-wrapper .year-right span:hover {
+	 cursor: pointer;
+	 background-color: #90ed04;
+}
+ .side-bar-container .side-bar .heading-container .year-list .year-wrapper .year-right .active {
+	 background-color: darkgreen;
+}
+ .side-bar-container .side-bar .heading-container .year-list .year-wrapper .year-right .active:hover {
+	 background-color: darkgreen;
+}
+ .side-bar-container .side-bar .heading-container .launch-wrapper {
+	 display: flex;
+	 flex-direction: row;
+	 flex-wrap: wrap;
+	 margin-top: 10px;
+	 padding: 0 10px;
+}
+ .side-bar-container .side-bar .heading-container .launch-wrapper .launch-left {
+	 padding: 5px 0;
+	 width: 50%;
+}
+ .side-bar-container .side-bar .heading-container .launch-wrapper .launch-left span {
+	 background-color: lightgreen;
+	 padding: 5px;
+	 border-radius: 2px;
+}
+ .side-bar-container .side-bar .heading-container .launch-wrapper .launch-left span:hover {
+	 cursor: pointer;
+	 background-color: #90ed04;
+}
+ .side-bar-container .side-bar .heading-container .launch-wrapper .launch-left .active {
+	 background-color: darkgreen;
+}
+ .side-bar-container .side-bar .heading-container .launch-wrapper .launch-left .active:hover {
+	 background-color: darkgreen;
+}
+ .side-bar-container .side-bar .heading-container .launch-wrapper .launch-right {
+	 padding: 5px 0;
+	 width: 50%;
+}
+ .side-bar-container .side-bar .heading-container .launch-wrapper .launch-right span {
+	 background-color: lightgreen;
+	 padding: 5px;
+	 border-radius: 2px;
+}
+ .side-bar-container .side-bar .heading-container .launch-wrapper .launch-right span:hover {
+	 cursor: pointer;
+	 background-color: #90ed04;
+}
+ .side-bar-container .side-bar .heading-container .launch-wrapper .launch-right .active {
+	 background-color: darkgreen;
+}
+ .side-bar-container .side-bar .heading-container .launch-wrapper .launch-right .active:hover {
+	 background-color: darkgreen;
+}
+ .side-bar-container .side-bar .heading-container .landing-wrapper {
+	 display: flex;
+	 flex-direction: row;
+	 flex-wrap: wrap;
+	 margin-top: 10px;
+	 padding: 0 10px;
+}
+ .side-bar-container .side-bar .heading-container .landing-wrapper .landing-left {
+	 padding: 5px 0;
+	 width: 50%;
+}
+ .side-bar-container .side-bar .heading-container .landing-wrapper .landing-left span {
+	 background-color: lightgreen;
+	 padding: 5px;
+	 border-radius: 2px;
+}
+ .side-bar-container .side-bar .heading-container .landing-wrapper .landing-left span:hover {
+	 cursor: pointer;
+	 background-color: #90ed04;
+}
+ .side-bar-container .side-bar .heading-container .landing-wrapper .landing-left .active {
+	 background-color: darkgreen;
+}
+ .side-bar-container .side-bar .heading-container .landing-wrapper .landing-left .active:hover {
+	 background-color: darkgreen;
+}
+ .side-bar-container .side-bar .heading-container .landing-wrapper .landing-right {
+	 padding: 5px 0;
+	 width: 50%;
+}
+ .side-bar-container .side-bar .heading-container .landing-wrapper .landing-right span {
+	 background-color: lightgreen;
+	 padding: 5px;
+	 border-radius: 2px;
+}
+ .side-bar-container .side-bar .heading-container .landing-wrapper .landing-right span:hover {
+	 cursor: pointer;
+	 background-color: #90ed04;
+}
+ .side-bar-container .side-bar .heading-container .landing-wrapper .landing-right .active {
+	 background-color: darkgreen;
+}
+ .side-bar-container .side-bar .heading-container .landing-wrapper .landing-right .active:hover {
+	 background-color: darkgreen;
+}
+ 

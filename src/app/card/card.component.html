@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="img-container">
+      <img [src]="iterObj1.links.mission_patch_small">
+    </div>
+    <div class="card-container">
+      <span><b>{{ iterObj1.mission_name}} # {{iterObj1.flight_number}}</b></span>
+      <span class="mission-id"><b>Mission Ids:</b> </span>
+      <ul class="mission-id-list" *ngIf="iterObj1.mission_id.length">
+        <li *ngFor="let mId of iterObj1.mission_id"><span>{{ mId }}</span></li>
+      </ul>
+      <span class="launch-year"><b>Launch Year:</b> {{ iterObj1.launch_year }} </span>
+      <span class="success-launch"><b>Successful Launch:</b> {{ iterObj1.launch_success }} </span>
+      <span class="success-land"><b>Successful Landing:</b> {{ (iterObj1.rocket)?.first_stage.cores[0].land_success }} </span>
+    </div>
+  </div>
