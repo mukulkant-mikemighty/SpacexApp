@@ -9,3 +9,11 @@
         position: absolute bottom;
         vertical-align: bottom;
 }
+
+.footer1.LI-badge-container.vertical.dark .LI-header {
+        padding-top: 15px;
+        margin-top: 50px;
+}
+.footer1.LI-badge-container.vertical.dark .LI-header {
+        margin: 0 10px;
+}
