@@ -20,10 +20,10 @@ export class AppComponent implements OnInit{
 
   ngOnInit() {
   	this.titleService.setTitle(this.title);
-  	this.meta.addTag({name: 'keywords', content: 'Angular Project, Create Angular Project, Space X, Space, space'});
+  	this.meta.addTag({name: 'keywords', content: 'Angular Project, Create Angular Project, SpaceX, Space, space'});
     this.meta.addTag({name: 'description', content: 'Angular project'});
     this.meta.addTag({name: 'author', content: 'Mukul Kant'});
-    var imgUrlPath= "../src/FFTB1.ico";
+    var imgUrlPath= "FFTB1.ico";
     this.meta.addTag({ name: 'og:image', content: imgUrlPath });
   }
   
