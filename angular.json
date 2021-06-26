@@ -21,6 +21,7 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
+              "src/FFTB.ico",
               "src/assets"
             ],
             "styles": [
