@@ -22,7 +22,7 @@ export class AppComponent implements OnInit{
     this.meta.addTag({name: 'description', content: 'Angular project'});
     this.meta.addTag({name: 'author', content: 'Mukul Kant'});
     var imgUrlPath= "../src/FFTB1.ico";
-    this.meta.updateTag({ name: 'og:image', content: imgUrlPath });
+    this.meta.addTag({ name: 'og:image', content: imgUrlPath });
   }
   
 }
