@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Injectable, Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 
 
@@ -7,6 +7,8 @@ import { Title, Meta } from '@angular/platform-browser';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+@Injectable()
 export class AppComponent implements OnInit{
   title = 'SpaceX';
 
