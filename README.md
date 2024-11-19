@@ -1,6 +1,6 @@
 # SpaceX
 ![image](https://github.com/mukulkant-mikemighty/SpacexApp/blob/master/image_original.jpg)
-LIVE URL: https://mukul-space-x.herokuapp.com/
+LIVE URL: https://spacexapp-gqn6.onrender.com/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.29.
 
