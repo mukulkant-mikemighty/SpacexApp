@@ -2,12 +2,8 @@
   "name": "space-x",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
     "start": "node server.js",
-    "build": "ng build --prod",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "build": "ng build --prod"
   },
   "engines": {
     "node": "18.x"
@@ -35,7 +31,6 @@
     "@angular/language-service": "~8.2.14",
     "@types/node": "~8.9.4",
     "@types/jasmine": "~3.3.8",
-    "@types/jasminewd2": "~2.0.3",
     "codelyzer": "^5.0.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
